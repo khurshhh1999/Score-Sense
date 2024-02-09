@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backendSS.MainController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background/App_background.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="1.0" opacity="0.95" prefHeight="600.0" prefWidth="786.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fx:id="homeTeamLogo" fitHeight="58.0" fitWidth="55.0" layoutX="17.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Teams/club_de_football.png" />
+                     </image></ImageView>
+                  <Label fx:id="homeTeamName" alignment="CENTER" layoutX="86.0" layoutY="77.0" prefHeight="35.0" prefWidth="268.0" text="Team A" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="homeTeamScorers" alignment="TOP_RIGHT" layoutX="106.0" layoutY="123.0" prefHeight="114.0" prefWidth="268.0" text="Player A 5'" textAlignment="RIGHT" />
+                  <Label fx:id="homeTeamScore" alignment="CENTER" contentDisplay="CENTER" layoutX="351.0" layoutY="73.0" prefHeight="34.0" prefWidth="34.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Black" size="30.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="76.0" layoutY="-9.0" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="34.0" x="300.0" y="110.0">
+                     <font>
+                        <Font name="Segoe UI" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="awayTeamScore" alignment="CENTER" contentDisplay="CENTER" layoutX="403.0" layoutY="73.0" prefHeight="34.0" prefWidth="34.0" text="3" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Black" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="awayTeamName" alignment="CENTER" layoutX="437.0" layoutY="77.0" prefHeight="35.0" prefWidth="268.0" text="Team B" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="awayTeamScorers" alignment="TOP_LEFT" layoutX="410.0" layoutY="123.0" prefHeight="114.0" prefWidth="268.0" text="Player B 3'&#10;Player C 56' (pen.)&#10;Player D 75'" />
+                  <ImageView fx:id="awayTeamLogo" fitHeight="71.0" fitWidth="55.0" layoutX="708.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Teams/club_de_football.png" />
+                     </image></ImageView>
+                  <Text layoutX="31.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming matches ·" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" layoutX="223.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Pictograms/ordre-du-jour.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nextFanFixture1" alignment="TOP_LEFT" layoutX="31.0" layoutY="326.0" prefHeight="82.0" prefWidth="418.0" text="Team C vs Team A&#10;UEFA Champions League&#10;Wednesday, 29 November &#10;12:45 PM&#10;">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nextFanFixture2" layoutX="31.0" layoutY="419.0" prefHeight="90.0" prefWidth="418.0" text="Team D vs Team A&#10;Premier League &#10;Saturday, 2 December&#10;3:00 PM">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="gameDate" alignment="CENTER" layoutX="319.0" layoutY="52.0" prefHeight="20.0" prefWidth="150.0" text="01/01/1991" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="785.0" prefHeight="600.0" prefWidth="125.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="44.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Pictograms/rouge_white.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttonProfile" contentDisplay="CENTER" ellipsisString="" layoutX="27.0" layoutY="43.0" onAction="#switchToProfilePage" prefHeight="70.0" prefWidth="70.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-background-radius: 40;" textAlignment="CENTER" textFill="TRANSPARENT">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Pictograms/user_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <ImageView fitHeight="40.0" fitWidth="34.0" layoutX="44.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Pictograms/podium.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttonLeagueTable" contentDisplay="CENTER" layoutX="23.0" layoutY="340.0" onAction="#switchToLeagueStandings" prefHeight="43.0" prefWidth="75.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="League" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="buttonLogOUT" layoutX="23.0" layoutY="503.0" onAction="#switchToLogINPage" prefHeight="40.0" prefWidth="75.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="Log OUT" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

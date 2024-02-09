@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backendSS.MainController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="1.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background/App_background.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="50.0" prefWidth="900.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="900.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Banner/topbanner_logIN.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="38.0" layoutY="129.0" opacity="0.9" prefHeight="422.0" prefWidth="358.0" style="-fx-background-color: #000000; -fx-background-radius: 5;">
+               <children>
+                  <Text fill="WHITE" layoutX="122.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="· New user" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="20.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <Text fill="WHITE" layoutX="20.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <Text fill="WHITE" layoutX="20.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <Text fill="WHITE" layoutX="20.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="League" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="20.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <TextField fx:id="newEmail" layoutX="131.0" layoutY="163.0" prefHeight="25.0" prefWidth="160.0" promptText="Email">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="newLastName" layoutX="131.0" layoutY="124.0" prefHeight="25.0" prefWidth="160.0" promptText="Last Name">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="newPassword" layoutX="131.0" layoutY="201.0" prefHeight="25.0" prefWidth="160.0" promptText="Password">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="79.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Pictograms/new_user_logo.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttonSignUP" layoutX="119.0" layoutY="338.0" onAction="#onScoreUPbuttonClicked" prefHeight="40.0" prefWidth="120.0" ripplerFill="BLACK" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="Score UP" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font></JFXButton>
+                  <ComboBox fx:id="leagueChoice" layoutX="131.0" layoutY="243.0" prefWidth="160.0" promptText="Select a League" style="-fx-background-color: #ffffff;" />
+                  <ComboBox fx:id="teamChoice" layoutX="131.0" layoutY="283.0" prefWidth="160.0" promptText="Select a Team" style="-fx-background-color: #ffffff;" />
+                  <Text fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="newFirstName" layoutX="131.0" layoutY="83.0" prefHeight="25.0" prefWidth="160.0" promptText="First Name">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></AnchorPane>
+            <AnchorPane layoutX="504.0" layoutY="145.0" opacity="0.96" prefHeight="318.0" prefWidth="334.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="37.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Pictograms/existing_user_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="80.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="· Welcome back" textAlignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="existingEmail" layoutX="131.0" layoutY="114.0" prefHeight="25.0" prefWidth="160.0" promptText="Email">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="existingPassword" layoutX="131.0" layoutY="163.0" prefHeight="25.0" prefWidth="160.0" promptText="Password">
+                     <font>
+                        <Font name="Segoe UI Italic" size="12.0" />
+                     </font></TextField>
+                  <Text layoutX="20.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <Text layoutX="20.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="RIGHT" wrappingWidth="100.0">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Text>
+                  <JFXButton fx:id="buttonSignIN" layoutX="107.0" layoutY="231.0" onAction="#onScoreINbuttonClicked" prefHeight="40.0" prefWidth="120.0" ripplerFill="WHITE" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Score IN" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
