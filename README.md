@@ -1,4 +1,4 @@
-# Score Sense Project Installation Guide
+# Score Sense Project Installation Guide for CSYE 6200
 
 Thank you for choosing Score Sense! Follow the steps below to get started with the installation process.
 
