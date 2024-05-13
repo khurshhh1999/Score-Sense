@@ -31,11 +31,6 @@ Right-click on Main.java > Run As > Run Configurations...
 In the Arguments tab, set the VM arguments to: --add-modules javafx.controls,javafx.fxml
 Uncheck the option for "Use the -XX:+ShowCodeDetailsInExceptionMessages" when launching.
 Click Apply > Run.
-
 __________________________________________
 #### Step 7: Create Your Account and Score UP!
 Once the application is running, follow the on-screen instructions to create your account and start scoring!
-
-==================
-Happy scoring! 🎉
-==================
